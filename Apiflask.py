@@ -19,8 +19,8 @@ def enviar_email():
     try:
         # Recebe os dados do formulário
         data = request.form
-        destinatario = data['destinatarioaqui']
-        assunto = data['[ASSUNTO AQUI]']
+        destinatario = data['destinatario']
+        assunto = data['assunto']
         mensagem = data['mensagem']
         anexo = request.files.get('anexo')
 
